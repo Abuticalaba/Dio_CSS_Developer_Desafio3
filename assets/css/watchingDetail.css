@@ -1,0 +1,181 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: Roboto;
+    background-color: #F9F9F9;
+}
+header {
+    width: 100%;
+    height: 56px;
+    margin-bottom: 20px;
+}
+
+header nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: #FFFFFF;
+}
+
+header nav figure{
+    width: 146px;
+    height: 24px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header nav figure img + img{
+    width: 90px;
+    height: 20px;
+}
+
+header nav form{
+    display: flex;
+}
+header nav form input{
+    width: 348px;
+}
+
+header nav form button{
+    width: 57px;
+    height: 40px;
+}
+
+header nav div {
+    width: 130px;
+    height: 34px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header nav div img, header nav figure img, header nav form button{
+    cursor: pointer;
+}
+
+header nav div img:hover, header nav figure img.img:hover{
+    background-color: rgba(128, 128, 128, 0.205);
+    padding: 10px;
+    border-radius: 50%;
+}
+
+.img {
+    width: 24px;
+    height: 24px;
+}
+
+main {
+    width: 1440px;
+    height: 1024px;
+    margin: 0 auto;
+    position: relative;
+}
+main>section{
+   display: flex;
+   flex-direction: column;
+   width: 952px;
+   gap: 20px;
+   position: absolute;
+   left: 0;
+   top: 0;
+}
+
+section.sub-menu {
+    display: flex;
+    flex-direction: row;
+    height: 42px;
+    box-sizing: border-box;
+    justify-content: space-between;
+    align-items: center;
+}
+
+section.sub-menu span{
+    display: block;
+}
+
+section.sub-menu div {
+    display: flex;
+    height: 42px;
+    align-items: center;
+    font-size: 14px;
+}
+
+section.sub-menu div img{
+    padding-right: 10px;
+    cursor: pointer;
+}
+
+section.sub-menu button {
+    height: 100%;
+    width: 159px;
+    background: rgba(204, 0, 0, 1);
+    font-size: 1rem;
+    font-weight: 600;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 3px;
+}
+
+section.sub-menu button:hover {
+    filter: brightness(1.3);
+}
+
+main>section p{
+    width: 510px;
+    font-size: 14px;
+}
+
+main aside {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    position: absolute;
+    right: 0;
+    width: 460px;
+    padding: 5px;
+}
+
+main aside div{
+    display: flex;
+    cursor: pointer;
+}
+
+main aside div.hover:hover{
+    background-color: rgba(128, 128, 128, 0.288);
+}
+
+main aside div figure img{
+    margin-right: 20px;
+}
+
+main aside div.info{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    color: rgba(81, 81, 81, 1);
+    font-size: 12px;
+}
+
+main aside div.info span b{
+    font-size: 14px;
+    color: black;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: gray;
+    filter: brightness(1.8);
+    min-height: 100px;
+    font-family: 'Dancing Script', cursive;
+    font-size: 1.5rem;
+}

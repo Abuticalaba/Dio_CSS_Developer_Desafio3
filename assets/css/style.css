@@ -1,0 +1,115 @@
+@import url(watchingDetail.css);
+
+header {
+    margin: 0;
+}
+main {
+    display: grid;
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    grid-template:
+    "sidebar video1 video2 video3 video4" 1fr
+    "sidebar video5 video6 video7 video8" 1fr
+    "sidebar video9 video10 video11 video12" 1fr
+    / .7fr 1fr 1fr 1fr 1fr;
+    gap: 10px;
+}
+
+main aside.sidebar {
+    width: 100%;
+    height: 100%;
+    grid-area: sidebar;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding: 0;
+    padding-top: 5px;
+    background-color: #FFFFFF;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+
+main aside.sidebar div{
+    width: 100%;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    column-gap: 15px;
+    padding-left: 10px;
+    font-size: 14px;
+    padding: 10px;
+    cursor: pointer;
+}
+
+main aside.sidebar div:hover{
+    background-color: rgba(128, 128, 128, 0.205);
+}
+
+hr {
+    width: 90%;
+    margin: 0 auto;
+    filter: brightness(1.3);
+}
+
+#video1{
+    grid-area: video1;
+}
+#video2{
+    grid-area: video2;
+}
+#video3{
+    grid-area: video3;
+}
+#video4{
+    grid-area: video4;
+}
+#video5{
+    grid-area: video5;
+}
+#video6{
+    grid-area: video6;
+}
+#video7{
+    grid-area: video7;
+}
+#video8{
+    grid-area: video8;
+}
+#video9{
+    grid-area: video9;
+}
+#video10{
+    grid-area: video10;
+}
+#video11{
+    grid-area: video11;
+}
+#video12{
+    grid-area: video12;
+}
+
+div.video {
+    padding: 15px;
+    cursor: pointer;
+}
+
+div.video:hover {
+    transform: scale(0.9);
+    background-color: rgba(128, 128, 128, 0.205);
+    border-radius: 10px;
+}
+
+div.video div.videoDetails{
+    display: flex;
+    column-gap: 15px;
+    align-items: center;
+}
+
+div.video div.videoDetails div.infoDetails{
+    display: flex;
+    flex-direction: column;
+    row-gap: 15px;
+}
